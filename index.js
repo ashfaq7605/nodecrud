@@ -19,6 +19,7 @@ app.get('/', (req, res) => {
     res.status(200).send(`<h1>Hello World</h1>`);
 });
 
+//node js server connection code
 mySqlPool.query('SELECT 1').then(() => {
     console.log(`Mysql DB Connected`.bgCyan.white);
     app.listen(port, () => {
